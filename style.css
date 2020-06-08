@@ -1,11 +1,11 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing:  border-box;
 }
 
 section {
-  height: 110vh;
+  height: 100vh;
   background-color: rgb(39, 41, 68);
   font-family: sans-serif;
 }
@@ -19,7 +19,7 @@ section {
 }
 
 .score h2 {
-  font-size: 30px
+  font-size: 30px;
 }
 
 .score p {
@@ -76,7 +76,7 @@ section {
   text-align: center;
 }
 
-.player-hand {
+.computer-hand {
   transform: rotateY(180deg);
 }
 
@@ -90,7 +90,7 @@ div.fadeIn {
   pointer-events: all;
 }
 
-@keyframes shakePlayer {
+@keyframes shakeComputer {
   0%{
     transform: rotateY(180deg) translateY(0px);
   }
@@ -120,7 +120,7 @@ div.fadeIn {
   }
 }
 
-@@keyframes shakeComputer {
+@keyframes shakePlayer {
   0%{
     transform: translateY(0px);
   }
